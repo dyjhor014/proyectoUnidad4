@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+</head>
+<body>
+    <h1>Llegaste al Landing Page, estado: {{ status }}</h1>
+    <br/>
+    <a href="{{ url_for("logout") }}">Desconectarse</a>
+    <a href="{{ url_for("actualizar") }}">Actualizar</a>
+    <a href="{{ url_for("eliminar") }}">Eliminar</a>
+</body>
+</html>
