@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Mi perfil{% endblock %}
+{% block content %}
+<div class="card" style="width: 18rem;">
+    <img src="{{ url_for('static', filename='img/img-profile.jpg')}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Jane Doe</h5>
+      <p class="card-text">Soy estudiante de programación en Silabuz.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Soy de Lima</li>
+      <li class="list-group-item">Miembro desde: 2022/11/17 19:34</li>
+      <li class="list-group-item">Último ingreso: 2022/11/17 19:34</li>
+      <li class="list-group-item"><a  href="{{ url_for("logout") }}" class="card-link">Cerrar sesion</a></li>
+      <li class="list-group-item"><a  href="{{ url_for("actualizar") }}" class="card-link">Editar perfil</a></li>
+      <li class="list-group-item"><a  href="{{ url_for("eliminar") }}" class="card-link">Eliminar</a></li>
+    </ul>
+  </div>
+{% endblock %}
